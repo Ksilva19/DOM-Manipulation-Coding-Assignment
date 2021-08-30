@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel='stylesheet' href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: tan;
+        }
+    </style>
+</head>
+<body class="container">
+    <br>
+    <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-item">New Item</label>
+                        <input type="text" class="form-control" id="new-item" placeholder="Item Name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="text" class="form-control" id="quantity" placeholder="#">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button id="add" class="btn btn-secondary form-control">Create</button> 
+            </div>
+        </div>
+    </div><br>
+    <h2 style="text-align: center;">Grocery List</h2><br>
+    <table id="list" class="table table-striped table-dark">
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity #</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
